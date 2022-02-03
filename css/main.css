@@ -1,0 +1,497 @@
+@charset "utf-8";
+@import "common.css";
+@import "layout.css";
+@import "mobile.css";
+
+.clear::after{
+	content:'';
+	display:block;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+	text-indent:-99999px;
+}
+
+@media all and (min-width:1024px){/*★★★★★★★★★★★★★★★★*/
+  .wrap{width:1440px; margin: 0 auto;}
+  
+  header{
+        background:url('../images/main/mainbanner.jpg') no-repeat center center/cover;
+        width:100%;
+        height: 1000px;
+    }
+
+    #navi{
+        position: relative;
+        width:100%; height: 75px;
+	      margin:0 auto;
+        background-color: rgba(0,0,0,0);
+        position: fixed;
+        z-index: 99999;
+    }
+    #util{position: absolute; right: 0; top:20px;}
+    #util>li{float: left;}
+    #util>li>a{
+        color:#fff;
+        display: block;
+        width:100px;
+        text-align: center;
+    }
+
+    .addback{background: rgba(0,0,0,0.8) !important;}
+    #btn{display: none;}
+
+
+    h1.gnb_logo, nav.gnb_wrap {position: absolute;}
+    h1.gnb_logo{top:20px; width:120px; left:20px;}
+    h1.gnb_logo>img{width:100%;}
+    nav.gnb_wrap{left:180px; top:53.39px;}
+    #gnb>li{
+        float: left;
+        display: block;
+        margin-right: 120px;
+        text-align: center;
+        font-weight: 500;
+    }
+    #gnb>li:first-child{margin-left: 50px;}
+    #gnb>li>a{
+        display:block;
+	    width:100%; height:100%;
+	    position:relative;
+        color:#fff;
+    }
+    #gnb>li:hover>a,
+    #util>li:hover>a,
+    ul.sub>li:hover>a{
+        color:#B5986E;
+        font-weight: 400;
+    }
+    ul.submenu{float: left; display: none;}
+    ul.sub li a{
+        color:#fff;
+        display: block;
+        width:200px;
+        height: 50px;
+        line-height: 50px;
+        text-align: left;
+        font-weight: 300;
+    }
+    ul.submenu>li>a{
+        color:#fff;
+        display: block;
+        width:200px;
+        height: 50px;
+        line-height: 50px;
+        text-align: left;
+        font-weight: 600;
+    }
+    #gnb>li>a:after{
+        content:'';
+        width:0%;
+        height:0px;
+        background:#B5986E;
+        position:absolute;
+        left:50%;
+        bottom:0;
+        display:none;
+        opacity:0;
+    }
+    #gnb>li:hover>a:after{
+        content:'';
+        width:100%;
+        height:2px;
+        background:#B5986E;
+        position:absolute;
+        left:0%; bottom:-10px;
+        display:block;
+        opacity:1;
+    }
+
+    ul.sub_wrap1,
+    ul.sub_wrap2,
+    ul.sub_wrap3,
+    ul.sub_wrap4,
+    ul.sub_wrap5{
+        display:none;
+        position:absolute;
+        width:100%;
+        margin-top:10px;
+        left:0;
+        padding-bottom:10px;
+    }
+    .sub_wrap1{margin-left: 50px;}
+    .sub_wrap2{margin-left: 223.42px;}
+    .sub_wrap3{margin-left: 395px;}
+    .sub_wrap4{margin-left: 595px;}
+    .sub_wrap5{margin-left: 865px;}
+    ul.sub_wrap1>li,
+    ul.sub_wrap2>li,
+    ul.sub_wrap3>li,
+    ul.sub_wrap4>li,
+    ul.sub_wrap5>li{float: left;}
+
+
+    div.background_img{display: none;}
+    
+
+    /*★★★★★★★★★★C A L E N D A R★★★★★★★★★★★★★*/
+
+    /*★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆*/
+    div.calendar_section{display: none;}
+    /*★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆*/
+    .clearfix:after {
+        content: '';
+        display: block;
+        clear: both;
+        float: none;
+      }
+      
+      /* ★★★★★★======== Calendar ========★★★★★★ */
+      .my-calendar {
+        width: 700px;
+        margin: 30px;
+        padding: 20px 20px 10px;
+        text-align: center;
+        font-weight: 800;
+        cursor: default;
+      }
+      .my-calendar .clicked-date {
+        float: left;
+        width: 42%;
+        padding: 46px 0 26px;
+      }
+      .my-calendar .calendar-box {
+        float: right;
+        width: 58%;
+        padding-left: 30px;
+        display: none;
+      }
+      
+      .clicked-date .cal-mon,
+      .clicked-date .cal-day,
+      .clicked-date .cal-date {
+        font-size: 18px;
+      }
+    
+      .ctr-box {
+        padding: 0 16px;
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+      .ctr-box .btn-cal {
+        position: relative;
+        float: left;
+        width: 25px;
+        height: 25px;
+        margin-top: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        background: none;
+      }
+      .ctr-box .btn-cal:after {
+        content: '<';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        line-height: 25px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .ctr-box .btn-cal.next {
+        float: right;
+      }
+      .ctr-box .btn-cal.next:after {
+        content: '>';
+      }
+      
+      .cal-table {
+        width: 100%;
+      }
+      .cal-table th {
+        width: 14.2857%;
+        padding-bottom: 5px;
+        font-size: 16px;
+        font-weight: 900;
+      }
+      .cal-table td {
+        padding: 3px 0;
+        height: 50px;
+        font-size: 15px;
+        vertical-align: middle;
+      }
+      .cal-table td.day {
+        position: relative;
+        cursor: pointer;
+      }
+      .cal-table td.today {
+        background: #ffd255;
+        border-radius: 50%;
+        color: #fff;
+      }
+      .cal-table td.day-active {
+        background: #ff8585;
+        border-radius: 50%;
+        color: #fff;
+      }
+      .cal-table td.has-event:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background: #FFC107;
+      }
+
+      /*CALENDDAR ENDDDDDDDDDDDDDDDDDDD*/
+      /*★★★★★★★★★★★★CHECK-IN OPTION★★★★★★★★★★★★★★★★*/
+      /*★★★★★★★★★★★★CHECK-IN OPTION★★★★★★★★★★★★★★★★*/
+      /*★★★★★★★★★★★★CHECK-IN OPTION★★★★★★★★★★★★★★★★*/
+      /*★★★★★★★★★★★★CHECK-IN OPTION★★★★★★★★★★★★★★★★*/
+      .checkin_option{margin-top: 50px; width:990px;}
+
+      .reserv_stand{position: relative;}
+      ul.reserv_list>li{
+        float: left;
+      }
+      ul.reserv_list>li{color: #B5986E; font-weight: 500;}
+      ul.reservation_op>li{
+        float: left;
+        margin: 20px 30px 0 0;
+        color: #000;
+        font-weight: 300;
+      }
+      ul.check_in{margin-right: 50px;}
+      ul.check_op>li{float: left; margin-top: 20px; display: block;}
+      ul.check_op>li:first-child{
+        font-size: 20px;
+        font-weight: 400;
+        margin-right: 10px;
+        line-height: 40px;
+      }
+      ul.check_op>li:nth-child(2),
+      ul.check_op>li:nth-child(3){
+        font-size: 30px;
+        font-weight: 400;
+        margin-left: 10px;
+        line-height: 30px;
+      }
+      ul.people_op>li{
+        font-size: 30px;
+        font-weight: 400;
+        margin: 20px 0 0 10px;
+        line-height: 30px;
+      }
+      ul.check_out>li>a>img{width:20px;}
+      ul.check_out>li:last-child{margin: 30px 50px 0 20px;}
+
+      hr.line_mid{
+        width:50px;
+        height: 1px;
+        background: #000;
+        border: 0;
+        margin-top: 40px;
+        margin-right: 50px;
+    }
+
+
+      div.reserv_btn{
+        width:160px;
+        height: 60px;
+        background: #B5986E;
+        text-align: center;
+        font-size: 24px;
+        line-height: 60px;
+        position: absolute;
+        right:0; top:50px;
+      }
+      div.reserv_btn>p>a{
+        color: #fff;
+        font-weight: 400;
+        display: block;
+      }
+
+      /*★★★specialoffer★★★*/
+      .specialoffer{margin-top: 200px; margin-bottom: 300px;}
+      .specialoffer_text{text-align: center; margin-bottom: 80px;}
+      .specialoffer_text>strong{
+          font-size: 48px;
+          color: #B5986E;
+          margin-top: 60px;
+      }
+      .specialoffer_text>p{
+          font-size: 18px;
+          color: #000;
+          margin: 40px 0;
+      }
+      .specialoffer_img>div{
+        width:380px;
+        float: left;
+        margin-right: 50px;
+      }
+      .specialoffer_img>div:first-child{margin-left: 100px;}
+      .specialoffer_img>div:last-child{margin-right: 0;}
+      .specialoffer_list>p{
+          margin-top: 20px;
+      }
+      .specialoffer_price{
+          font-weight: 500;
+      }
+      .more_btn, .specialoffer_list>a{display: none;}
+
+      /*★★★richell membership(main)★★★*/
+      .membership_main{margin-top: 300px; margin-bottom: 300px;}
+      .membership_title{text-align: center; margin-bottom: 80px;}
+      .membership_title>strong{
+          font-size: 48px;
+          color: #B5986E;
+      }
+      .membership_title>p{
+          font-size: 18px;
+          color: #000;
+          margin: 40px 0;
+      }
+      .membership_img>div{
+        width:380px;
+        overflow: hidden;
+        float: left;
+        margin-right: 50px;
+      }
+      .membership_img>div:first-child{margin-left: 100px;}
+      .membership_img>div:last-child{margin-right: 0;}
+      .membership_list{text-align: center; position: relative;}
+      .membership_list>p{
+          font-weight: 500;
+          color:#B5986E;
+          margin-top: 20px;
+      }
+      .membership_list>a{display: none;}
+
+      div.membership_desc{
+        width:380px; height: 500px;
+        background: rgba(0,0,0,0.7);
+        color: #fff;
+        position: absolute;
+        top:0; display: none;
+      }
+      .membership_text{
+        font-size: 14px; line-height: 25px;
+        font-weight: 200;
+        text-align: center;
+        padding-top: 150px;
+      }
+      .membership_btn{
+        width:120px; height: 50px;
+        margin: 50px 0 0 130px;
+        border: 1px solid #B5986E;
+      }
+      .membership_btn>a>p{
+        font-weight: 200;
+        line-height: 50px;
+        color: #fff;
+      }
+      .membership_btn:hover p{
+        background: #B5986E;
+        color: #fff;
+        font-weight: 400;
+      }
+
+
+      /*★★★★★★footerr★★★★★★*/
+      footer{
+        background: #000;
+        width:100%; height: 180px;
+        font-size: 0.9rem;
+      }
+      .footer_spacing{padding-top: 20px;}
+      .footer_space{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .footer_space>ul{float: left;}
+      ul.customer_service>li,
+      ul.qrcode_wrap>li,
+      ul.sns_wrap>li
+      {color: #B5986E; font-weight: 500;}
+      ul.customer_svc>li{
+        float: left;
+        width:100px;
+        padding-top: 10px;
+        
+      }
+      ul.customer_svc>li:nth-child(1),
+      ul.customer_svc>li:nth-child(3){
+        color: #B5986E;
+        font-weight: 300;
+      }
+      ul.customer_svc>li:nth-child(2),
+      ul.customer_svc>li:nth-child(4){
+        color: #888;
+        font-weight: 200;
+      }
+      ul.customer_svc>li:last-child{width:200px;}
+      
+      ul.qrcode>li{float: left; padding: 10px 10px 0 0; width:100px;}
+      ul.qrcode>li:nth-child(2)>img,
+      ul.qrcode>li:nth-child(4)>img{
+        width:25px;
+      }
+      ul.qrcode>li:nth-child(1)>img,
+      ul.qrcode>li:nth-child(3)>img{
+        width:100px;
+      }
+      ul.qrcode>li:last-child{padding-right: 0;}
+
+      ul.snsicon{position: relative;}
+      ul.snsicon>li{float:left; position: absolute;}
+      ul.snsicon>li:nth-child(1),
+      ul.snsicon>li:nth-child(3){left:0;}
+      ul.snsicon>li:nth-child(2),
+      ul.snsicon>li:nth-child(4){left:60px;}
+      ul.snsicon>li>a>img{width:40px;}
+      .hide_icon{display: none;}
+
+      ul.footer_mn{
+        width:1440px;
+        color: #888;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        font-weight: 200;
+      }
+      ul.footer_mn>li{padding-top: 10px;}
+      ul.footer_mn>li:hover a{color: #B5986E;}
+      ul.footer_mn>li>a{
+        color: #888;
+      }
+      address{
+        width:1440px;
+        color: #888;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        font-weight: 200;
+      }
+      address>p{padding-top: 10px;}
+      .copyright{
+        color: #888;
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+
+
+
+
+
+
+
+
+}

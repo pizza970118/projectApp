@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="author" content=""/>
+    <link rel="shortcut icon" href="http://pudding0118.dothome.co.kr/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://pudding0118.dothome.co.kr/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://pudding0118.dothome.co.kr/images/favicon.ico" type="image/x-icon">
+    <title>Richell seoul</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--헤더영역-->
+<header>
+    <div id="navi">
+        <div class="clear">
+            <!--요기가 유틸영역-->
+            <ul id="util" class="clear">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">마이 페이지</a></li>
+                <li><a href="#">예약 확인</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">멤버십</a></li>
+                <li><a href="#">Language▼</a></li>
+            </ul>
+        </div>
+        <!--여기는 상단 아이콘 영역-->
+        <h1 class="gnb_logo"><img src="./images/richell_logo.png" alt="LOGO" /></h1>
+        <div id="btn">
+            <div class="logo_mobile">
+                <img src="./images/richell_logo.png" alt="LOGO" />
+            </div>
+            <div id="burger" class="burger">
+                <img src="./images/hamburger.png" alt="hamburger" class="burger_btn" />
+            </div>
+            <div class="my_icon">
+                <img src="./images/my_icon.png" alt="my_icon" />
+            </div>
+        </div>
+        <nav class="gnb_wrap">
+            <!--여기가 gnb영역-->
+            <ul id="gnb" class="menu clear">
+                <li><a href="#">HOTELS</a>
+                    <ul class="submenu sub_wrap1 clear">
+                        <li><a href="#">객실</a>
+                            <ul class="sub">
+                                <li><a href="#">디럭스</a></li>
+                                <li><a href="#">프리미엄</a></li>
+                                <li><a href="#">더 리첼 스위트</a></li>
+                                <li><a href="#">리첼 그랜드 스위트</a></li>
+                                <li><a href="#">투 베드룸 리첼 그랜드 스위트</a></li>
+                                <li><a href="#">리첼 로열 스위트</a></li>
+                                <li><a href="#">리첼 프라이빗 그랜드 스위트</a></li>
+                                <li><a href="#">더 리첼 펜트하우스</a></li>
+                                <li><a href="#">프로모션</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">풀빌라</a>
+                            <ul class="sub">
+                                <li><a href="#">디럭스 풀빌라</a></li>
+                                <li><a href="#">리첼 더 프라이빗 풀빌라</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">DINING</a>
+                    <ul class="submenu sub_wrap2 clear">
+                        <li><a href="#">CASUAL DINE & DRINK</a>
+                            <ul class="sub">
+                                <li><a href="#">AQUARELLE</a></li>
+                                <li><a href="#">STAY R</a></li>
+                                <li><a href="#">THE NOODLES'</a></li>
+                                <li><a href="#">MILKY WAY</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">FINE DINE & DRINK</a>
+                            <ul class="sub">
+                                <li><a href="#">37 GRILL & BAR</a></li>
+                                <li><a href="#">FLAMES</a></li>
+                                <li><a href="#">THE TRINITE BAR</a></li>
+                                <li><a href="#">RICHELL LOUNGE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">RICHELLISH</a>
+                    <ul class="submenu sub_wrap3 clear">
+                        <li><a href="#">CLOUD 9</a>
+                            <ul class="sub">
+                                <li><a href="#">고객지원</a></li>
+                            </ul>
+                        </li>                            
+                        <li><a href="#">MERCY</a>
+                            <ul class="sub">
+                                <li><a href="#">부대시설</a></li>
+                                <li><a href="#">프로그램</a></li>
+                                <li><a href="#">고객지원</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">CONFERENCE&EVENTS</a>
+                    <ul class="submenu sub_wrap4 clear">
+                        <li><a href="#">MEETING</a>
+                            <ul class="sub">
+                                <li><a href="#">그랜드 홀</a></li>
+                                <li><a href="#">사파이어 홀</a></li>
+                                <li><a href="#">리첼 스튜디오</a></li>
+                                <li><a href="#">보드 룸</a></li>
+                                <li><a href="#">프로모션</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">WEDDING</a>
+                            <ul class="sub">
+                                <li><a href="#">WEDDING</a></li>
+                                <li><a href="#">웨딩홀</a></li>
+                                <li><a href="#">STYLE</a></li>
+                                <li><a href="#">FOOD</a></li>
+                                <li><a href="#">GALLERY</a></li>
+                                <li><a href="#">프로모션</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">RICHELLITY</a>
+                    <ul class="submenu sub_wrap5 clear">
+                        <li><a href="#">MY PAGE</a>
+                            <ul class="sub">                            
+                                <li><a href="#">멤버십</a></li>
+                                <li><a href="#">포인트</a></li>
+                                <li><a href="#">예약 내역</a></li>
+                                <li><a href="#">쿠폰</a></li>
+                                <li><a href="#">1:1 문의</a></li>
+                                <li><a href="#">개인정보수정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MEMBERSHIP</a>
+                            <ul class="sub">
+                                <li><a href="#">RICHELL REWARDS</a></li>
+                                <li><a href="#">RICHELLIONS</a></li>
+                                <li><a href="#">고객지원</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SUPPORT</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">FAQ/Q&A</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                                <li><a href="#">고객지원</a></li>
+                                <li><a href="#">사이트 맵</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ABOUT US</a>
+                            <ul class="sub">
+                                <li><a href="#">ABOUT RICHELL</a></li>
+                                <li><a href="#">LOCATION</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!--gnb 끝!-->
+        </nav>
+    </div>
+</header>
+<section class="wrap checkin_option">
+    <h2>체크인 날짜 영역</h2>
+    <div>
+        <div class="reserv_stand">
+            <div class="reserv_option">
+                <ul class="reserv_list clear">
+                    <li>예약일자
+                        <ul class="reservation_op date_op clear">
+                            <li>체크인
+                                <ul class="check_in check_op clear">
+                                    <li><a href="#">1월</a></li>
+                                    <li><a href="#">18일</a></li>
+                                    <li><a href="#">(화)</a></li>
+                                </ul>
+                            </li>
+                            <li><hr class="line_mid" /></li>
+                            <li>체크아웃
+                                <ul class="check_out check_op clear">
+                                    <li><a href="#">1월</a></li>
+                                    <li><a href="#">19일</a></li>
+                                    <li><a href="#">(수)</a></li>
+                                    <li><a href="#"><img src="./images/calender.png" alt="calendar" /></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>인원 선택
+                        <ul class="reservation_op pp_op">
+                            <li>성인
+                                <ul class="check_adult people_op">
+                                    <li><a href="#">2</a></li>
+                                </ul>
+                            </li>
+                            <li>어린이
+                                <ul class="check_kid people_op">
+                                    <li><a href="#">0</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="reserv_btn">
+                <p><a href="#">예약하기</a></p>
+            </div>
+        </div>
+        <!--날짜 선택 영역-->
+        <div class="container wrap calendar_section">
+            <div class="my-calendar clearfix">
+              <div class="clicked-date">
+                <div class="cal-mon"></div>
+                <div class="cal-day"></div>
+                <div class="cal-date"></div>
+              </div>
+              <div class="calendar-box">
+                <div class="ctr-box clearfix">
+                  <button type="button" title="prev" class="btn-cal prev">
+                  </button>
+                  <span class="cal-month"></span>
+                  <span class="cal-year"></span>
+                  <button type="button" title="next" class="btn-cal next">
+                  </button>
+                </div>
+                <table class="cal-table">
+                  <thead>
+                    <tr>
+                      <th>S</th>
+                      <th>M</th>
+                      <th>T</th>
+                      <th>W</th>
+                      <th>T</th>
+                      <th>F</th>
+                      <th>S</th>
+                    </tr>
+                  </thead>
+                  <tbody class="cal-body"></tbody>
+                </table>
+              </div>
+            </div>
+            <!-- // .my-calendar -->
+          </div>
+         
+    </div>
+</section>
+<section>
+    <h2>이벤트 배너 영역</h2>
+    <div class="specialoffer wrap">
+        <!--SPECIAL OFFERS 영역-->
+        <div class="specialoffer_text"> 
+            <strong>SPECIAL OFFERS</strong>
+            <p>리첼 서울만의 특별한 경험을 스마트한 가격에</p>
+        </div>
+        <div class="specialoffer_img clear">
+            <div class="specialoffer_1 specialoffer_list">
+                <img src="./images/contents/special_offer1.jpg" alt="deluxe" />
+                <a href="#"><img src="./images/contents/deluxe.jpg" alt="deluxe" /></a>
+                <p>#&nbsp;HEALING &nbsp;#&nbsp;DELUXE</p>
+                <p class="specialoffer_price">179,000원~</p>
+                <p>2022.01.01~2022.1.31</p>
+            </div>
+            <div class="specialoffer_2 specialoffer_list">
+                <img src="./images/contents/special_offer2.jpg" alt="premium" />
+                <a href="#"><img src="./images/contents/premium.jpg" alt="premium" /></a>
+                <p>#&nbsp;SPECIAL &nbsp;#&nbsp;PREMIUM</p>
+                <p class="specialoffer_price">360,000원~</p>
+                <p>2022.01.01~2022.1.31</p>
+            </div>
+            <div class="specialoffer_3 specialoffer_list">
+                <img src="./images/contents/special_offer3.jpg" alt="richellprivategrandsuite" />
+                <a href="#"><img src="./images/contents/privategrandsuite.jpg" alt="richellprivategrandsuite" /></a>
+                <p>#&nbsp;LUXURY &nbsp;#&nbsp;RICHELL PRIVATE GRAND SUITE</p>
+                <p class="specialoffer_price">670,000원~</p>
+                <p>2022.01.01~2022.1.31</p>
+            </div>
+            <div class="more_btn">
+                <p><a href="#">더 알아보러 가기</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <h2>멤버십 배너 영역</h2>
+    <div class="membership_main wrap">
+        <!--MEMBERSHIP-->
+        <div class="membership_title"> 
+            <strong>RICHELL MEMBERSHIP</strong>
+            <p>리첼 서울만의 다양하고 특별한 멤버십 프로그램을 소개합니다</p>
+        </div>
+        <div class="membership_img clear">
+            <div class="membership_1 membership_list">
+                <img src="./images/membership/richellreward.jpg" alt="richellrewards" />
+                <a href="#"><img src="./images/membership/richellrewards.jpg" alt="richellrewards" /></a>
+                <p>RICHELL REWARDS</p>
+                <div class="membership_desc membership_desc1">
+                    <p class="membership_text">차별화된 특전과 혜택이<br/>
+                        기다리는 리첼 서울을 애용해 주시는<br/>
+                        고객님들을 위한 리첼 서울의<br/>
+                        무료 멤버십 입니다.</p>
+                    <div class="membership_btn">
+                        <a href="#"><p>자세히 보기</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="membership_2 membership_list">
+                <img src="./images/membership/richellion.jpg" alt="richellions" />
+                <a href="#"><img src="./images/membership/richellions.jpg" alt="richellions" /></a>
+                <p>RICHELLIONS</p>
+                <div class="membership_desc membership_desc2">
+                    <p class="membership_text">특별하고 품격있는 서비스가<br/>
+                        가득한 전세계 리첼에서<br/>
+                        언제든지 사용 가능한<br/>
+                        리첼 통합 유료 멤버십 입니다.</p>
+                   <div class="membership_btn">
+                    <a href="#"><p>자세히 보기</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="membership_3 membership_list">
+                <img src="./images/membership/mercy.jpg" alt="merciel" />
+                <a href="#"><img src="./images/membership/merciel.jpg" alt="merciel" /></a>
+                <p>MERCIEL</p>
+                <div class="membership_desc membership_desc3">
+                    <p class="membership_text">리첼 서울에서만 누릴 수 있는<br/>
+                        가장 고급스러운 스파의 시작<br/>
+                        리첼에서만 만끽할 수 있는<br/>
+                        힐링이 기다리는 멤버십 입니다.</p>
+                    <div class="membership_btn">
+                        <a href="#"><p>자세히 보기</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="wrap footer_spacing">
+        <div class="footer_space clear">
+            <ul class="customer_service clear">
+                <li>CUSTOMER SERVICE
+                    <ul class="customer_svc clear">
+                        <li>예약문의</li>
+                        <li>02)123-2741</li>
+                        <li>Tel.</li>
+                        <li>1588-2741</li>
+                    </ul>
+                    <ul class="customer_svc clear">
+                        <li>FAX.</li>
+                        <li>02-123-2741</li>
+                        <li>E-MAIL</li>
+                        <li>richell-seoul@richell.co.kr</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="qrcode_wrap">
+                <li>E-CONSIERGE SERVICE
+                    <ul class="qrcode clear">
+                        <li><img src="./images/sns/googleplaystore_btn.jpg" alt="playstore" /></li>
+                        <li><img src="./images/sns/qrcode_.png" alt="qrcode" /></li>
+                        <li><img src="./images/sns/appstore_btn.jpg" alt="appstore" /></li>
+                        <li><img src="./images/sns/qrcode_.png" alt="qrcode" /></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="sns_wrap">
+                <li>RICHELL SNS
+                    <ul class="snsicon clear">
+                        <li class="fb_icon"><a href="#"><img src="./images/sns/facebook.png" alt="facebook" /></a></li>
+                        <li class="insta_icon"><a href="#"><img src="./images/sns/instagram.png" alt="instagram" /></a></li>
+                        <li class="fb_icon2 hide_icon"><a href="#"><img src="./images/sns/facebook2.png" alt="facebook2" /></a></li>
+                        <li class="insta_icon2 hide_icon"><a href="#"><img src="./images/sns/instagram2.png" alt="instagram2" /></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <ul class="footer_mn clear">
+            <li><a href="#">오시는 길</a></li>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">영상정보처리기기운영·관리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">채용안내</a></li>
+            <li><a href="#">ABOUT US</a></li>
+        </ul>
+        <address class="clear">
+            <p>서울특별시 영등포구 국제금융로 10(여의도동) 07326 리첼 서울</p>
+            <p>대표 Stuart Mercier (알씨에스에이치호텔디벨로프먼트 유한회사)</p>
+            <p>통신판매업 신고</p>
+            <p>사업자 등록번호 123-81-45678</p>
+            <p>번호 제2022-서울영등포-1004호</p>
+        </address>
+        <p class="copyright">Copyrightⓒ 2022 All rights reserved Richell.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+<script src="./css/index.js"></script>
+</body>
+</html>
